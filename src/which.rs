@@ -22,7 +22,7 @@ pub(crate) fn which(context: function::Context, name: &str) -> Result<Option<Str
       // This candidate is a relative path, either because the user invoked `which("rel/path")`,
       // or because there was a relative path in `PATH`. Resolve it to an absolute path,
       // relative to the working directory of the just invocation.
-      path = context.execution_context.working_directory().join(path);
+      path = context.execution_context.path_working_directory().join(path);
     }
 
     path = path.lexiclean();

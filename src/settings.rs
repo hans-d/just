@@ -19,6 +19,8 @@ pub(crate) struct Settings {
   pub(crate) guards: bool,
   pub(crate) ignore_comments: bool,
   pub(crate) lazy: bool,
+  pub(crate) no_cd: bool,
+  pub(crate) no_cd_strict: bool,
   pub(crate) no_exit_message: bool,
   pub(crate) positional_arguments: bool,
   pub(crate) quiet: bool,
